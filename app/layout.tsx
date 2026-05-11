@@ -21,7 +21,7 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={`${openSans.variable}
-			flex h-full antialiased w-screen items-center`}>
+			flex h-full antialiased w-screen items-center selection:bg-[#c4ffd9]`}>
 			<body className="min-h-full flex flex-col">{children}</body>
 		</html>
 	);
