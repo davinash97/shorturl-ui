@@ -24,7 +24,7 @@ export default React.memo(function Header() {
 					</ol>
 				</div>
 			</div>
-			<div><Button title="Get Started" textColor="#EFEFFF" className="bg-green-500 px-4 py-2" onClick={() => navigate("signin")} /></div>
+			<div><Button title="Get Started" textColor="#EFEFFF" className="bg-green-500 px-4 py-2" onClick={() => navigate("signup")} /></div>
 		</header>
 	)
 })
