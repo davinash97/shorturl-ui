@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+
+import Footer from "./footer/footer";
+import Header from "./header/header";
+
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -22,7 +26,11 @@ export default function RootLayout({
 			lang="en"
 			className={`${openSans.variable}
 			flex h-full antialiased w-screen items-center selection:bg-[#c4ffd9]`}>
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex flex-col">
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
